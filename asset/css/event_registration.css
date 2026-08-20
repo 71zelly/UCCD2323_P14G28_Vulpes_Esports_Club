@@ -189,8 +189,21 @@
         width: 400px;
     }
 
+    /* ================= BUTTON ================= */
+
     .pixel-button {
-        left: 0;
+        position: relative;
+
+        left: auto;
+        right: auto;
+
+        display: block;
+
+        min-width: 120px;
+
+        margin-left: auto;
+        margin-right: auto;
+
         font-size: 24px;
     }
 
@@ -260,14 +273,29 @@
         box-sizing: border-box;
     }
 
+
+    /* ================= CONFIRM / CANCEL BUTTON ================= */
+
     .pixel-button {
-        left: 0;
+        position: relative;
+
+        left: auto !important;
+        right: auto !important;
+
+        display: block;
+
         min-width: 120px;
+        width: 180px;
+
         height: 55px;
+
         padding: 8px 20px;
+
         font-size: 18px;
-        margin-left: auto;
-        margin-right: auto;
+
+        margin: 20px auto !important;
+
+        box-sizing: border-box;
     }
 
     .cancel-button {
@@ -311,11 +339,27 @@
         height: 38px;
     }
 
+
+    /* ================= BUTTONS ================= */
+
     .pixel-button {
+        position: relative;
+
+        left: auto !important;
+        right: auto !important;
+
+        width: 160px;
         min-width: 105px;
+
         height: 50px;
+
         padding: 6px 15px;
+
         font-size: 16px;
+
+        margin: 20px auto !important;
+
+        box-sizing: border-box;
     }
 
     .cancel-button {
