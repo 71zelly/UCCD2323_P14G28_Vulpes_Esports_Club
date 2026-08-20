@@ -1,0 +1,564 @@
+.bigtitle {
+    margin: 30px 0 15px 0;
+    text-align: center;
+
+    font-family: "Press Start 2P", cursive;
+    font-size: clamp(17px, 2.5vw, 28px);
+
+    color: #ffffff;
+
+    text-shadow:
+        3px 0 #00eaff,
+        -2px 0 #ff3edb,
+        0 0 12px rgba(255,255,255,0.4);
+}
+
+.ticket-page {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 40px 0 100px 0;
+    padding: 0;
+}
+/* ================= MATCH CARD ================= */
+
+.ticket-page .match-card {
+    width: 1150px;
+    height: 400px;
+
+    position: relative;
+
+    margin: 0;
+
+    background: #f5f1f5;
+
+    box-shadow:
+        0 0 0 3px #4c0e8f;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+/* ================= HEADER ================= */
+
+.ticket-page .match-header {
+    height: 55px;
+
+    display: flex;
+
+    background: #7521c9;
+
+    color: white;
+
+    border-bottom: 4px solid #7521c9;
+}
+
+/* GAME NAME */
+
+.ticket-page .game-name {
+    width: 300px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f1f5;
+
+    color: #7521c9;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+/*===============================deco====================*/
+.ticket-page .game-name::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    right: -30px;
+
+    width: 0;
+    height: 0;
+
+    border-top: 55px solid #f5f1f5;
+    border-right: 30px solid transparent;
+}
+
+/* ==================================================EVENT NAME =============================*/
+
+.ticket-page .event-name {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+/* ================= TEAMS ================= */
+
+.ticket-page .team-match {
+    margin-top: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 120px;
+}
+
+/* ======================================TEAM================================= */
+
+.ticket-page .team {
+    width: 220px;
+    height: 220px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+/* =============================================TEAM IMAGE================================ */
+
+.ticket-page .team img {
+    max-width: 180px;
+    max-height: 180px;
+
+    object-fit: contain;
+}
+
+/*================================= VS ==========================*/
+
+.ticket-page .vs {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+/* =================================VS IMAGE============================= */
+
+.ticket-page .vs img {
+    max-width: 180px;
+    max-height: 180px;
+
+    object-fit: contain;
+}
+
+/* ================= BOTTOM ================= */
+
+.ticket-page .match-bottom {
+    height: 100px;
+
+    background: #7521c9;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 50px;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 0 0 3px #4c0e8f;
+
+    position: relative;
+}
+
+/* ================= DATE / TIME ================= */
+
+.ticket-page .match-info {
+    display: flex;
+
+    gap: 80px;
+
+    margin-top: -60px;
+
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+.white-line { 
+    width: 100vw;
+    height: 1px;
+    background-color: white;
+
+    margin-top: 0;
+    margin-left: calc(50% - 50vw);
+
+    transform: none;
+}
+.title_purchase {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.buy_ticket{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+/*=========================================QUANTITY==========================================*/
+.quantity-box {
+    display: flex;
+    align-items: center;
+    height: 45px;
+
+}
+
+.quantity-btn {
+    width: 60px;
+    height: 45px;
+    border: 1px solid #999;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.quantity-btn:hover {
+    background-color: #eeeeee;
+}
+
+#quantity {
+    width: 60px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    color: black;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+
+    font-size: 20px;
+}
+
+.fix{
+    display: flex;
+    gap:90px;
+    width:50%;
+    margin: auto;
+    margin-top:30px;
+}
+
+/*===============================================BUTTON=======================================*/
+.pixel-button {
+    position: relative;
+    margin: 10px auto 0;
+    display: block;
+    margin-top: 10px;
+    padding: 8px 25px;
+    min-width: 80px;
+    height:60px;
+
+    background: linear-gradient(
+        to bottom,
+        #fff600 0%,
+        #ffd900 45%,
+        #ffb800 100%
+    );
+
+    border: 5px solid #111;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 7px 0 #111,
+        inset 0 3px 0 #fff85c,
+        inset 0 -4px 0 #e89d00;
+
+    color: #111;
+    font-size: 17px;
+    font-weight: 900;
+
+    cursor: pointer;
+
+    font-family: monospace;
+
+    transition: transform 0.1s;
+}
+
+.pixel-button:hover {
+    filter: brightness(1.08);
+    transform: translateY(5px);
+}
+
+.pixel-button:active {
+    box-shadow:
+        0 2px 0 #111,
+        inset 0 3px 0 #fff85c,
+        inset 0 -4px 0 #e89d00;
+}
+
+.two_button{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+/*===============================================TABLET=============================================*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .bigtitle {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    .ticket-page {
+        width: 100%;
+        margin: 40px 0 80px 0;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .ticket-page .match-card {
+        width: 100%;
+        max-width: 850px;
+        height: 380px;
+        box-sizing: border-box;
+    }
+
+    .ticket-page .match-header {
+        height: 50px;
+    }
+
+    .ticket-page .game-name {
+        width: 200px;
+        font-size: 18px;
+    }
+
+    .ticket-page .game-name::after {
+        right: -25px;
+        border-top: 50px solid #f5f1f5;
+        border-right: 25px solid transparent;
+    }
+
+    .ticket-page .event-name {
+        font-size: 18px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .ticket-page .team-match {
+        margin-top: 30px;
+        gap: 60px;
+    }
+
+    .ticket-page .team {
+        width: 180px;
+        height: 180px;
+    }
+
+    .ticket-page .team img {
+        max-width: 140px;
+        max-height: 140px;
+    }
+
+    .ticket-page .vs img {
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .ticket-page .match-bottom {
+        height: 90px;
+        margin-top: 35px;
+    }
+
+    .ticket-page .match-info {
+        gap: 50px;
+        margin-top: -50px;
+        font-size: 20px;
+    }
+
+    .white-line {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .fix {
+        width: 70%;
+        gap: 60px;
+        margin-top: 30px;
+    }
+
+    .title_purchase {
+        font-size: 25px;
+        gap: 25px;
+    }
+
+    .buy_ticket {
+        gap: 25px;
+    }
+
+    .two_button {
+        align-items: center;
+    }
+}
+
+
+/*===============================================MOBILE=============================================*/
+
+@media (max-width: 767px) {
+
+    .bigtitle {
+        font-size: 18px;
+        margin: 25px 0 15px 0;
+    }
+
+    .ticket-page {
+        width: 100%;
+        margin: 30px 0 60px 0;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .ticket-page .match-card {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .ticket-page .match-header {
+        height: 48px;
+    }
+
+    .ticket-page .game-name {
+        width: 100px;
+        font-size: 13px;
+    }
+
+    .ticket-page .game-name::after {
+        right: -20px;
+        border-top: 48px solid #f5f1f5;
+        border-right: 20px solid transparent;
+    }
+
+    .ticket-page .event-name {
+        font-size: 12px;
+        text-align: center;
+        padding: 0 10px;
+        line-height: 1.2;
+    }
+
+    .ticket-page .team-match {
+        margin-top: 25px;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .ticket-page .team {
+        width: 85px;
+        height: 140px;
+    }
+
+    .ticket-page .team img {
+        max-width: 75px;
+        max-height: 75px;
+    }
+
+    .ticket-page .vs img {
+        max-width: 55px;
+        max-height: 55px;
+    }
+
+    .ticket-page .match-bottom {
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    .ticket-page .match-info {
+        gap: 20px;
+        margin-top: 0px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .white-line {
+        width: 100%;
+        height: 1px;
+        margin-left: 0;
+    }
+
+    .title_purchase {
+        font-size: 20px;
+        gap: 20px;
+    }
+
+    .buy_ticket {
+        gap: 20px;
+    }
+
+    .fix {
+        width: 90%;
+        gap: 30px;
+        margin-top: 25px;
+        box-sizing: border-box;
+    }
+
+    .fix > * {
+        min-width: 0;
+    }
+
+    .quantity-box {
+        height: 40px;
+    }
+
+    .quantity-btn {
+        width: 45px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    #quantity {
+        width: 45px;
+        height: 40px;
+        font-size: 17px;
+    }
+
+    .two_button {
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .two_button .pixel-button {
+        width: 180px !important;
+        min-width: 0;
+        height: 55px !important;
+        margin-top: 10px !important;
+        padding: 8px 15px;
+        font-size: 16px !important;
+        box-sizing: border-box;
+    }
+}
