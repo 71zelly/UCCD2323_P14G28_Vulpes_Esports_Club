@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Confirmation | The Way To The Top</title>
+    <link rel="stylesheet" href="asset/css/format.css">
+    <link rel="stylesheet" href="asset/css/ticket_confirmation.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Press+Start+2P&family=Rajdhani:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <a href="index.html" class="nav-logo"><img src="asset/media/deco/logo.png" alt="Club logo"></a>
+        <nav class="nav-links" id="navLinks">
+            <a href="about_us.html">About Us</a>
+            <a href="teamnroster.html">Teams &amp; Roster</a>
+            <a href="tournament.html">Events</a>
+            <a href="news.html">News</a>
+            <a href="store.html">Store</a>
+            <a href="index.html#contact-us">Contact Us</a>
+            <a href="login.html" id="loginLink">Log In</a>
+        </nav>
+        <div class="nav-right">
+            <a href="cart.html" class="cart-icon">🛒</a>
+            <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>The Way To The Top</h1>
+    </section>
+    <!--===========================================TICKET CONFIRMATION========================-->
+    <div class="title">
+        <div class="title1">
+            <div class="check"></div>
+            <h1 class="bigtitle">TICKET CONFIRMED</h1>
+        </div>
+        <p style="font-size: 22px; font-weight: bold;">Your ticket has been reserved!</p>
+    </div>
+
+    <div class="big-white-box">
+
+        <h1 id="confirmation-title"></h1>
+
+        <div class="ticket-details">
+
+            <div class="detail-row">
+                <span>DATE</span>
+                <strong id="confirmation-date"></strong>
+            </div>
+
+            <div class="detail-row">
+                <span>TIME</span>
+                <strong id="confirmation-time"></strong>
+            </div>
+
+            <div class="detail-row">
+                <span>VENUE</span>
+                <strong id="confirmation-venue"></strong>
+            </div>
+
+            <div class="detail-row">
+                <span>TYPE</span>
+                <strong>General Admission</strong>
+            </div>
+
+            <div class="detail-row">
+                <span>TICKET ID</span>
+                <strong id="ticket-id"></strong>
+            </div>
+
+        </div>
+
+        <div id="qrcode"></div>
+
+    </div>
+
+    <button type="button" class="pixel-button" onclick="window.location.href='tournament.html'"
+        style="color:black ;font-family: var(--font-pixel); text-shadow: 3px 3px 0px #f5f1f5; margin-top: 30px; font-size: 35px;">
+        BACK TO EVENT
+    </button>
+
+    <!-- ================= OUR SPONSORS ================= -->
+    <section id="sponsors">
+        <h2 class="sponsors-title reveal">Our Sponsors</h2>
+        <div class="sponsors-row reveal">
+            <span>Nexus Tech Solutions</span>
+            <span>AeroStride Athletics</span>
+            <span>NovaGlow Cosmetics</span>
+            <span>Vertex Financial Group</span>
+            <span>PureNature Organics</span>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT US / NAVIGATOR ================= -->
+    <section class="cn-section" id="contact-us">
+        <div class="cn-grid reveal">
+
+            <div>
+                <div class="pill-btn">
+                    <img src="../asset/media/deco/contactus.png" alt="">
+                </div>
+                <div class="social-row">
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src="../asset/media/deco/ig_icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://discord.com" target="_blank" rel="noopener noreferrer">
+                        <img src="../asset/media/deco/discord_icon.png" alt="Discord">
+                    </a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                        <img src="../asset/media/deco/x_icon.png" alt="X">
+                    </a>
+                    <a href="https://mail.google.com" target="_blank" rel="noopener noreferrer">
+                        <img src="../asset/media/deco/email_icon.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <div class="pill-btn">
+                    <img src="../asset/media/deco/navigator.png" alt="">
+                </div>
+                <div class="sitemap-cols">
+                    <div class="sitemap-col">
+                        <h4><a href="about_us.html">About Us</a></h4>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Main Achievement Wall</li>
+                            <li>Meet Our Committee</li>
+                        </ul>
+                    </div>
+                    <div class="sitemap-col">
+                        <h4><a href="teamnroster.html">Teams &amp; Roster</a></h4>
+                        <ul>
+                            <li>Teams</li>
+                            <li>Rankings</li>
+                        </ul>
+                    </div>
+                    <div class="sitemap-col">
+                        <h4><a href="tournament.html">Events</a></h4>
+                        <ul>
+                            <li>Tournaments</li>
+                            <li>Club Events</li>
+                        </ul>
+                    </div>
+                    <div class="sitemap-col">
+                        <h4><a href="news.html">News</a></h4>
+                        <ul>
+                            <li>All</li>
+                            <li>Awards</li>
+                            <li>Announcements</li>
+                            <li>Activities</li>
+                        </ul>
+                    </div>
+                    <div class="sitemap-col">
+                        <h4><a href="store.html">Store</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= BRICK STRIP + COPYRIGHT ================= -->
+    <div class="brick-strip"></div>
+    <footer class="copyright-bar">
+        &copy; 2026 Copyright. All rights reserved.
+    </footer>
+
+    <script src="asset/js/format.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="asset/js/ticket_confirmation.js"></script>
+</body>
+
+</html>

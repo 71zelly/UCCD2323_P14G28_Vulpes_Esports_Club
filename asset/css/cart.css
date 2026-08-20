@@ -1,0 +1,492 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        linear-gradient(180deg,
+            #10002f 0%,
+            #170047 50%,
+            #26005c 100%);
+    color: white;
+    font-family: "Courier New", monospace;
+}
+
+/* =========================PAGE========================= */
+.cart-page {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 25px 35px 60px;
+}
+
+/* =========================TITLE========================= */
+.page-title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.page-title h1 {
+    margin: 0;
+    font-family: "Press Start 2P", cursive;
+    font-size: clamp(25px, 3vw, 40px);
+    color: #ffffff;
+    text-shadow:
+        3px 0 #00eaff,
+        -2px 0 #ff3edb,
+        0 0 12px
+        rgba(255,255,255,0.4);
+}
+
+/* =========================CART LAYOUT========================= */
+.cart-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+    gap: 45px;
+    align-items: start;
+}
+
+/* =========================LEFT SIDE========================= */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.cart-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 122px 1fr;
+    gap: 20px;
+    min-height: 155px;
+}
+
+.product-image-box {
+    width: 122px;
+    height: 145px;
+    background: #f7f2fa;
+    border-radius: 6px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-image-placeholder {
+    color: #4b087e;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-info {
+    padding-top: 8px;
+    min-width: 0;
+}
+
+.product-name {
+    color: #eee7f8;
+    font-family: "Orbitron", sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.product-price {
+    color: #bda0ff;
+    font-family: "Orbitron", sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.product-size {
+    color: #ffffff;
+    font-family: "Orbitron", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.size-label {
+    font-size: 16px;
+    color: #ffa9e1;
+}
+
+/* =========================QUANTITY========================= */
+.item-bottom {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 4px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    background: rgba(20, 20, 30, 0.9);
+    overflow: hidden;
+}
+
+.quantity-control button{
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.quantity-number {
+    width: 46px;
+    height: 35px;
+    border: 1px solid #2d2040;
+    background: #faf7fc;
+    color: #151020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Courier New", monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quantity-control button {
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.quantity-control button:hover {
+    background: #7c3aed;
+    color: #ffffff;
+}
+
+.quantity-number {
+    width: 45px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Orbitron", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background: transparent;
+}
+
+.remove-btn {
+    border: none;
+    background: transparent;
+    color: #f2ebf8;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+.remove-btn:hover {
+    color: #ff4bd8;
+}
+
+/* =========================RIGHT SIDE========================= */
+.order-summary {
+    background: #f8f3fa;
+    color: #13002e;
+    border-radius: 6px;
+    padding: 25px 28px 28px;
+    min-height: 335px;
+    margin-top: 63px;
+}
+
+.summary-title {
+    text-align: center;
+    color: #7131c2;
+    font-size: 35px;
+    font-family: "Rajdhani",sans-serif;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+/* =========================DISCOUNT========================= */
+.discount-form {
+    display: flex;
+    width: 100%;
+    height: 44px;
+    margin-bottom: 20px;
+}
+
+.discount-input {
+    flex: 1;
+    min-width: 0;
+    border: 1px solid #777;
+    border-right: none;
+    outline: none;
+
+    padding: 0 12px;
+    background: #ffffff;
+    color: #222;
+
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.discount-input::placeholder {
+    color: #8e8e8e;
+}
+
+.discount-btn {
+    width: 48px;
+    border: 1px solid #777;
+    background: #ffffff;
+    color: #050505;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.discount-btn:hover {
+    background: #eee7f2;
+}
+
+.discount-message {
+    min-height: 18px;
+    margin-top: -12px;
+    margin-bottom: 8px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.discount-message.success {
+    color: #15803d;
+}
+
+.discount-message.error {
+    color: #c1121f;
+}
+
+/* =========================SUMMARY ROW========================= */
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 16px;
+    margin: 14px 0;
+}
+
+.summary-label {
+    font-weight: 500;
+}
+
+.summary-value {
+    font-weight: 500;
+}
+
+.total-row {
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.total-row .summary-label,
+.total-row .summary-value {
+    font-weight: 900;
+}
+
+/* =========================CHECKOUT========================= */
+.checkout-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.checkout-btn {
+    min-width: 172px;
+    height: 51px;
+    border: 2px solid #a66b00;
+    border-radius: 4px;
+    background:
+        linear-gradient(#ffd52c,
+            #f3b300);
+    color: #1b1500;
+    font-family: "Press Start 2P", monospace;
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.12s ease;
+
+}
+
+.checkout-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.checkout-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 0 #704600;
+}
+
+/* =========================EMPTY CART========================= */
+.empty-cart {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Rajdhani",sans-serif;
+    font-weight: 700;
+}
+
+.empty-cart h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.empty-cart p {
+    color: #c8b8d9;
+    margin-bottom: 25px;
+}
+
+.shop-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 160px;
+    height: 45px;
+
+    border: 2px solid #a66b00;
+    border-radius: 4px;
+    background:
+        linear-gradient(#ffd52c,
+            #f3b300);
+    color: #1b1500;
+    font-family: "Press Start 2P", monospace;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.shop-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.shop-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 0 #704600;
+}
+
+.continue-shopping {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: text-shadow 0.25s ease, color 0.25s ease;
+    margin-left: 43%;
+    margin-top: 200px;
+
+}
+
+.continue-shopping:hover {
+    color: #fff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* =========================RESPONSIVE========================= */
+@media (max-width: 850px) {
+
+    .cart-page {
+        padding: 25px 20px 50px;
+    }
+
+    .cart-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .order-summary {
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .page-title h1 {
+        font-size: 25px;
+    }
+
+    .cart-item {
+        grid-template-columns: 95px 1fr;
+        gap: 14px;
+    }
+
+    .product-image-box {
+        width: 95px;
+        height: 120px;
+    }
+
+    .product-name {
+        font-size: 18px;
+    }
+
+    .product-price {
+        font-size: 16px;
+    }
+
+    .product-size {
+        font-size: 15px;
+    }
+
+    .item-bottom {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .quantity-control button,
+    .quantity-number {
+        width: 36px;
+    }
+
+    .order-summary {
+        padding: 22px 18px;
+    }
+}

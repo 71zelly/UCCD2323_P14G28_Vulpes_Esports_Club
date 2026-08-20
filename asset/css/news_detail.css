@@ -1,0 +1,207 @@
+/* ========================================
+   NEWS DETAIL PAGE
+   ======================================== */
+
+.news-detail-container {
+    width: 94%;
+    max-width: 1400px;
+    margin: 60px auto 80px;
+}
+
+
+/* ========================================
+   NEWS IMAGE
+   ======================================== */
+
+.news-detail-image {
+    display: block;
+    width: 100%;
+    max-width: 1300px;
+    height: 650px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* ========================================
+   NEWS INFORMATION
+   ======================================== */
+
+.news-detail-info {
+    width: 100%;
+    padding: 30px 10px;
+}
+
+.news-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+/* ========================================
+   CATEGORY
+   ======================================== */
+
+#newsCategory {
+    display: inline-block;
+    color: #a855f7;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* ========================================
+   DATE
+   ======================================== */
+
+#newsDate {
+    margin: 0;
+    color: #999;
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+/* ========================================
+   TITLE
+   ======================================== */
+
+#newsTitle {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+
+/* ========================================
+   CONTENT
+   ======================================== */
+
+#newsContent {
+    margin: 0;
+    color: #d4d4d4;
+    font-size: 30px;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVE
+   ======================================== */
+
+@media screen and (max-width: 768px) {
+
+    .news-detail-container {
+        width: 90%;
+        margin: 35px auto 60px;
+    }
+
+
+    /* News Image */
+
+    .news-detail-image {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        min-height: 0;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+
+
+    /* Information */
+
+    .news-detail-info {
+        padding: 22px 5px;
+    }
+
+
+    /* Category */
+
+    #newsCategory {
+        font-size: 13px;
+        letter-spacing: 0.8px;
+    }
+
+
+    /* Date */
+
+    #newsDate {
+        margin-top: 6px;
+        margin-bottom: 16px;
+
+        font-size: 13px;
+    }
+
+
+    /* Title */
+
+    #newsTitle {
+        font-size: 28px;
+        line-height: 1.3;
+        margin-bottom: 18px;
+    }
+
+
+    /* Content */
+
+    #newsContent {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+
+
+/* ========================================
+   SMALL MOBILE DEVICES
+   ======================================== */
+
+@media screen and (max-width: 480px) {
+
+    .news-detail-container {
+        width: 92%;
+        margin-top: 25px;
+    }
+
+
+    .news-detail-image {
+        min-height: 180px;
+        max-height: 300px;
+        border-radius: 6px;
+    }
+
+
+    .news-detail-info {
+        padding: 18px 2px;
+    }
+
+
+    #newsCategory {
+        font-size: 12px;
+    }
+
+
+    #newsDate {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+
+
+    #newsTitle {
+        font-size: 24px;
+        line-height: 1.3;
+        margin-bottom: 16px;
+    }
+
+
+    #newsContent {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}

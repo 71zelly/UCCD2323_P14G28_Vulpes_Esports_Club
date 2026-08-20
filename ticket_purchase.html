@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Purchase | The Way To The Top</title>
+    <link rel="stylesheet" href="asset/css/format.css">
+    <link rel="stylesheet" href="asset/css/ticket_purchase.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Press+Start+2P&family=Rajdhani:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <a href="index.html" class="nav-logo"><img src="asset/media/deco/logo.png" alt="Club logo"></a>
+        <nav class="nav-links" id="navLinks">
+            <a href="about_us.html">About Us</a>
+            <a href="teamnroster.html">Teams &amp; Roster</a>
+            <a href="tournament.html">Events</a>
+            <a href="news.html">News</a>
+            <a href="store.html">Store</a>
+            <a href="index.html#contact-us">Contact Us</a>
+            <a href="login.html" id="loginLink">Log In</a>
+        </nav>
+        <div class="nav-right">
+            <a href="cart.html" class="cart-icon">🛒</a>
+            <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>The Way To The Top</h1>
+    </section>
+
+    <!--======================================TICKET PURCHASE=====================================-->
+    <h1 class="bigtitle">GET YOUR TICKET</h1>
+    <section class="ticket-page">
+        <div class="match-card">
+
+            <div class="match-header">
+
+                <div class="game-name" id="ticket-game">
+                </div>
+
+                <div class="event-name" id="ticket-title">
+                </div>
+
+            </div>
+
+            <div class="team-match">
+
+                <div class="team">
+                    <img id="ticket-team1" src="" alt="Team 1">
+                </div>
+
+                <div class="vs">
+                    <img src="asset/media/event/VS.png" alt="VS">
+                </div>
+
+                <div class="team">
+                    <img id="ticket-team2" src="" alt="Team 2">
+                </div>
+
+            </div>
+
+            <div class="match-bottom">
+
+                <div class="match-info">
+
+                    <span id="ticket-time"></span>
+
+                    <span id="ticket-date"></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <div class="white-line"></div>
+    <div>
+        <h1 style="margin-top: 30px; width:50%; margin:auto; margin-top: 20px;">
+            GENERAL ADMISSION
+        </h1>
+        <p style="font-size: 20px; font-weight: bold; width:50%; margin:auto;">Tournament viewing access</p>
+    </div>
+
+    <div class="purchase">
+        <div class="fix">
+            <div class="title_purchase">
+                <p>PRICE</p>
+                <p>QUANTITY</p>
+            </div>
+
+            <div class="buy_ticket">
+                <p style="font-size: 30px; font-weight: bold; ">
+                    RM 15</p>
+
+                <div class="quantity-box">
+                    <button type="button" class="quantity-btn" onclick="decreaseQuantity()">−</button>
+
+                    <span id="quantity">1</span>
+
+                    <button type="button" class="quantity-btn" onclick="increaseQuantity()">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="two_button">
+            <button type="button" class="pixel-button confirm-btn" onclick="confirmTicket()"
+                style="color:black ;font-family: var(--font-pixel); text-shadow: 3px 3px 0px #f5f1f5; height:70px; width:220px; margin-top:50px; font-size: 20px;">
+                CONFIRM
+            </button>
+
+            <button type="button" class="pixel-button cancel-btn" onclick="window.location.href='tournament.html'"
+                style="color:black ;font-family: var(--font-pixel); text-shadow: 3px 3px 0px #f5f1f5; height:70px; width:220px; font-size: 23px;">
+                CANCEL
+            </button>
+        </div>
+    </div>
+
+    <!-- ================= OUR SPONSORS ================= -->
+    <section id="sponsors">
+        <h2 class="sponsors-title reveal">Our Sponsors</h2>
+        <div class="sponsors-row reveal">
+            <span>Nexus Tech Solutions</span>
+            <span>AeroStride Athletics</span>
+            <span>NovaGlow Cosmetics</span>
+            <span>Vertex Financial Group</span>
+            <span>PureNature Organics</span>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT US / NAVIGATOR ================= -->
+    <section class="cn-section" id="contact-us">
+        <div class="cn-grid reveal">
+
+            <div>
+                <div class="pill-btn">
+                    <img src="../asset/media/deco/contactus.png" alt="">
+                </div>
+                <div class="social-row">
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src="../asset/media/deco/ig_icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://discord.com" target="_blank" rel="noopener noreferrer">
+                        <img src="../asset/media/deco/discord_icon.png" alt="Discord">
+                    </a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                        <img src="../asset/media/deco/x_icon.png" alt="X">
+                    </a>
+                    <a href="https://mail.google.com" target="_blank" rel="noopener noreferrer">
+                        <img src="../asset/media/deco/email_icon.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <div class="pill-btn">
+                    <img src="../asset/media/deco/navigator.png" alt="">
+                </div>
+                <div class="sitemap-cols">
+                    <div class="sitemap-col">
+                        <h4><a href="about_us.html">About Us</a></h4>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Main Achievement Wall</li>
+                            <li>Meet Our Committee</li>
+                        </ul>
+                    </div>
+                    <div class="sitemap-col">
+                        <h4><a href="teamnroster.html">Teams &amp; Roster</a></h4>
+                        <ul>
+                            <li>Teams</li>
+                            <li>Rankings</li>
+                        </ul>
+                    </div>
+                    <div class="sitemap-col">
+                        <h4><a href="tournament.html">Events</a></h4>
+                        <ul>
+                            <li>Tournaments</li>
+                            <li>Club Events</li>
+                        </ul>
+                    </div>
+                    <div class="sitemap-col">
+                        <h4><a href="news.html">News</a></h4>
+                        <ul>
+                            <li>All</li>
+                            <li>Awards</li>
+                            <li>Announcements</li>
+                            <li>Activities</li>
+                        </ul>
+                    </div>
+                    <div class="sitemap-col">
+                        <h4><a href="store.html">Store</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= BRICK STRIP + COPYRIGHT ================= -->
+    <div class="brick-strip"></div>
+    <footer class="copyright-bar">
+        &copy; 2026 Copyright. All rights reserved.
+    </footer>
+
+    <script src="asset/js/format.js"></script>
+    <script src="asset/js/ticket_purchase.js"></script>
+
+</body>
+
+</html>

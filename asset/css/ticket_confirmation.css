@@ -1,0 +1,421 @@
+.title1{
+    display: flex;
+    gap:30px;
+}
+
+.check {
+  width: 43px;
+  height: 43px;
+  background: #00d928;
+  border-radius: 50%;
+  position: relative;
+}
+
+.check::before {
+  content: "";
+  position: absolute;
+
+  width: 21px;
+  height: 11px;
+
+  border-left: 5px solid #061900;
+  border-bottom: 5px solid #061900;
+
+  transform: rotate(-45deg);
+
+  left: 10px;
+  top: 10px;
+}
+
+.bigtitle {
+    margin: 20px 0 15px 0;
+    text-align: center;
+
+    font-family: "Press Start 2P", cursive;
+    font-size: clamp(17px, 2.5vw, 28px);
+
+    color: #ffffff;
+
+    text-shadow:
+        3px 0 #00eaff,
+        -2px 0 #ff3edb,
+        0 0 12px rgba(255,255,255,0.4);
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    gap:0;
+
+    margin: auto;
+    margin-top:30px;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*===================================white background==============================================*/
+.big-white-box {
+    width: 50%;
+    min-height: 650px;
+
+    margin: 50px auto;
+
+    padding: 45px 60px;
+
+    background-color: white;
+
+    border-radius: 30px;
+
+    box-sizing: border-box;
+}
+
+/*======================================================================================================*/
+#confirmation-title {
+    width: 100%;
+    margin: 0 0 30px 0;
+
+    text-align: center;
+
+    color: #7521c9;
+
+    font-size: 40px;
+
+    line-height: 1.4;
+}
+
+.ticket-details {
+    width: 80%;
+
+    margin: 0 auto;
+}
+
+
+/* EACH ROW */
+
+.detail-row {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    margin: 20px 0;
+
+    font-size: 20px;
+}
+
+
+/* =======================================================LEFT SIDE===================================*/
+
+.detail-row span {
+    width: 40%;
+
+    text-align: left;
+
+    margin-left: 100px;
+
+    color: #222222;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+}
+
+
+/* ======================================================RIGHT SIDE======================================*/
+
+.detail-row strong {
+    width: 50%;
+
+    text-align: left;
+
+    color: #222222;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================QR CODE========================================================= */
+
+#qrcode {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 25px;
+}
+
+/*===============================================BUTTON=================================================*/
+.pixel-button {
+    position: relative;
+    margin: 10px auto 0;
+    display: block;
+    margin-top: 10px;
+    padding: 10px 35px;
+    min-width: 100px;
+    height:70px;
+
+    background: linear-gradient(
+        to bottom,
+        #fff600 0%,
+        #ffd900 45%,
+        #ffb800 100%
+    );
+
+    border: 5px solid #111;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 7px 0 #111,
+        inset 0 3px 0 #fff85c,
+        inset 0 -4px 0 #e89d00;
+
+    color: #111;
+    font-size: 30px;
+    font-weight: 900;
+
+    cursor: pointer;
+
+    font-family: monospace;
+
+    transition: transform 0.1s;
+}
+
+.pixel-button:hover {
+    filter: brightness(1.08);
+    transform: translateY(5px);
+}
+
+.pixel-button:active {
+    box-shadow:
+        0 2px 0 #111,
+        inset 0 3px 0 #fff85c,
+        inset 0 -4px 0 #e89d00;
+}
+
+/* ============================================= MOBILE / TABLET================================== */
+
+@media (max-width: 900px) {
+
+    .big-white-box {
+        width: 85%;
+
+        min-height: 600px;
+
+        padding: 40px 35px;
+
+        margin-top: 40px;
+
+        border-radius: 25px;
+    }
+
+    .ticket-details {
+        width: 90%;
+    }
+
+    #confirmation-title {
+        font-size: 32px;
+
+        margin-bottom: 30px;
+    }
+
+    .detail-row {
+        font-size: 19px;
+
+        margin: 20px 0;
+    }
+
+    .detail-row span {
+        width: 40%;
+    }
+
+    .detail-row strong {
+        width: 60%;
+    }
+
+    #qrcode {
+        margin-top: 30px;
+    }
+
+    #qrcode img,
+    #qrcode canvas {
+        width: 220px !important;
+        height: 220px !important;
+    }
+
+    .pixel-button {
+        font-size: 27px !important;
+
+        min-height: 65px;
+
+        padding: 10px 30px;
+
+        margin-top: 30px;
+    }
+}
+
+
+/* ==========================================MOBILE========================================= */
+
+@media (max-width: 600px) {
+
+    .title {
+        width: 100%;
+
+        margin-top: 20px;
+
+        padding: 0 15px;
+
+        box-sizing: border-box;
+    }
+
+    .title1 {
+        width: 100%;
+
+        gap: 12px;
+
+        justify-content: center;
+    }
+
+    .check {
+        width: 35px;
+        height: 35px;
+    }
+
+    .check::before {
+        width: 17px;
+        height: 9px;
+
+        border-left: 4px solid #061900;
+        border-bottom: 4px solid #061900;
+
+        left: 8px;
+        top: 9px;
+    }
+
+    .bigtitle {
+        margin: 15px 0;
+
+        font-size: 15px;
+
+        line-height: 1.5;
+
+        white-space: nowrap;
+    }
+
+    .title p {
+        margin: 5px 0 0 0;
+
+        font-size: 17px !important;
+
+        text-align: center;
+
+        line-height: 1.5;
+    }
+
+    .big-white-box {
+        width: 92%;
+
+        max-width: none;
+
+        min-height: auto;
+
+        margin: 35px auto 25px auto;
+
+        padding: 30px 20px 35px 20px;
+
+        border-radius: 20px;
+    }
+
+    #confirmation-title {
+        width: 100%;
+
+        margin-bottom: 25px;
+
+        font-size: 20px;
+
+        line-height: 1.5;
+
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .ticket-details {
+        width: 100%;
+        max-width: none;
+    }
+
+    .detail-row {
+        width: 100%;
+
+        display: flex;
+
+        align-items: flex-start;
+
+        margin: 17px 0;
+
+        font-size: 16px;
+
+        line-height: 1.5;
+    }
+
+    .detail-row span {
+        width: 40%;
+
+        margin-left: 0;
+
+        padding-right: 10px;
+    }
+
+    .detail-row strong {
+        width: 60%;
+
+        white-space: normal;
+
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    #qrcode {
+        width: 100%;
+
+        margin-top: 25px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    #qrcode img,
+    #qrcode canvas {
+        width: 200px !important;
+        height: 200px !important;
+
+        max-width: 80vw;
+    }
+
+    .pixel-button {
+        width: auto;
+
+        max-width: 90%;
+
+        min-height: 60px;
+
+        height: auto;
+
+        margin: 25px auto 40px auto;
+
+        padding: 10px 22px;
+
+        font-size: 20px !important;
+
+        line-height: 1.3;
+    }
+}

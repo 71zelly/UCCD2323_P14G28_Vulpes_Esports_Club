@@ -1,0 +1,497 @@
+.eventpage {
+    background: transparent;
+
+    padding: 0;
+    margin: 0;
+
+    width: auto;
+    height: auto;
+}
+
+.side-menu {
+    width: 220px;
+
+    position: absolute;
+
+    left: 30px;
+    top: 50px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    background: transparent;
+
+}
+
+.menu-btn {
+    width: 190px;
+    height: 50px;
+
+    padding: 0;
+
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    position: relative;
+}
+
+
+
+.menu-btn img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+/*=============================display light icon===============================*/
+.icon-dark {
+    display: none;
+}
+
+/*=========================================icon selected=======================================*/
+.menu-btn.active .icon-light {
+    display: none;
+}
+
+.menu-btn.active .icon-dark {
+    display: block;
+}
+.eventpage {
+    background: transparent;
+
+    padding: 0;
+    margin: 0;
+
+    width: auto;
+    height: auto;
+}
+
+.match-card-list {
+
+    position: relative;
+    width: calc(100% - 320px);
+
+    max-width: 1150px;
+
+    margin-left: auto;
+    margin-right: 100px;
+
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0px;
+
+    box-sizing: border-box;
+}
+
+.match-card {
+    width: 1150px;
+    height:400px;
+    position:relative;
+
+    margin:0px;
+    background: #f5f1f5;
+    box-shadow: 0 0 0 3px #4c0e8f;
+
+    border-radius: 8px;
+
+}
+.match-card2 {
+    width: 1150px;
+    height:400px;
+    position:relative;
+
+    margin-top:150px;
+    background: #f5f1f5;
+    box-shadow: 0 0 0 3px #4c0e8f;
+
+    border-radius: 8px;
+
+}
+
+/* =====================================match header============================================*/
+.match-header {
+    height: 55px;
+
+    display: flex;
+
+    background: #7521c9;
+    color: white;
+    border-bottom: 4px solid #7521c9;
+
+}
+
+.game-name {
+    width: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f1f5;
+    color: #7521c9;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    position:relative;
+    z-index:1;
+}
+
+.game-name::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    right: -28px;
+
+    width: 0px;
+    height: 0px;
+
+    border-top: 55px solid #f5f1f5;
+    border-right: 30px solid transparent;
+
+}
+
+.event-name {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    position:relative;
+    z-index:1;
+}
+
+/* ===================================================match middle=====================================*/
+.teams {
+    height: 260px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+}
+
+.team {
+    width: 220px;
+    height: 220px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.team img {
+    max-width: 180px;
+    max-height: 180px;
+
+    object-fit: contain;
+}
+
+.vs img{
+    max-width:180px;
+    max-height:180px;
+
+}
+
+.team-match{
+    margin-top:40px;
+    display:flex;
+    gap:120px;
+    justify-content: center;
+}
+
+/* ==========================================================match bottom=================================*/
+.match-bottom {
+    height: 100px;
+
+    background: #7521c9;
+
+    display: flex;
+    margin-top:50px;
+
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 0 3px #4c0e8f;
+
+    position: relative;
+}
+
+/* ==============================================time===========================================*/
+.match-info {
+    display: flex;
+    gap: 80px;
+    margin-top:-60px;
+
+    color: white;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*=============================================buy ticket===================================*/
+.ticket-btn {
+    position: absolute;
+
+    bottom: 18px;
+    left: 48%;
+
+    transform: translateX(-50%);
+
+    width: 200px;
+    height: 45px;
+
+    background:none;
+    border:none;
+
+    cursor: pointer;
+}
+
+/*===============================================TABLET=============================================*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .side-menu {
+        width: 160px;
+        left: 0;
+        top: 50px;
+        gap: 15px;
+    }
+
+    .menu-btn {
+        width: 155px;
+        height: 38px;
+    }
+
+    .match-card-list {
+        width: calc(100% - 200px);
+        margin-left: 180px;
+        margin-right: 20px;
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
+    .match-card,
+    .match-card2 {
+        width: 100%;
+        height: 380px;
+    }
+
+    .match-card2 {
+        margin-top: 120px;
+    }
+
+    .match-header {
+        height: 50px;
+    }
+
+    .game-name {
+        width: 180px;
+        font-size: 18px;
+    }
+
+    .game-name::after {
+        right: -25px;
+        border-top: 50px solid #f5f1f5;
+        border-right: 25px solid transparent;
+    }
+
+    .event-name {
+        font-size: 18px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .team-match {
+        margin-top: 30px;
+        gap: 60px;
+    }
+
+    .team {
+        width: 180px;
+        height: 180px;
+    }
+
+    .team img {
+        max-width: 140px;
+        max-height: 140px;
+    }
+
+    .vs img {
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .match-bottom {
+        height: 90px;
+        margin-top: 40px;
+    }
+
+    .match-info {
+        gap: 50px;
+        margin-top: -50px;
+        font-size: 20px;
+    }
+
+    .ticket-btn {
+        width: 170px;
+        height: 40px;
+        bottom: 15px;
+    }
+
+}
+
+
+/*===============================================MOBILE=============================================*/
+
+@media (max-width: 767px) {
+
+    .eventpage {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .side-menu {
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+
+        gap: 10px;
+
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .menu-btn {
+        width: 145px;
+        height: 38px;
+    }
+
+    .match-card-list {
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-top: 20px;
+        padding-bottom: 60px;
+
+        gap: 0;
+    }
+
+    .match-card,
+    .match-card2 {
+        width: 100%;
+        height: 360px;
+
+        box-sizing: border-box;
+    }
+
+    .match-card2 {
+        margin-top: 100px;
+    }
+
+    .match-header {
+        height: 48px;
+    }
+
+    .game-name {
+        width: 110px;
+        font-size: 14px;
+    }
+
+    .game-name::after {
+        right: -19px;
+
+        border-top: 48px solid #f5f1f5;
+        border-right: 20px solid transparent;
+    }
+
+    .event-name {
+        font-size: 13px;
+        text-align: center;
+
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+
+    .team-match {
+        margin-top: 30px;
+
+        gap: 10px;
+
+        justify-content: center;
+    }
+
+    .team {
+        width: 100px;
+        height: 150px;
+    }
+
+    .team img {
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    .vs img {
+        max-width: 65px;
+        max-height: 65px;
+    }
+
+    .match-bottom {
+        height: 85px;
+
+        margin-top: 30px;
+    }
+
+    .match-info {
+        gap: 20px;
+
+        margin-top: -45px;
+
+        font-size: 15px;
+
+        justify-content: center;
+    }
+
+    .ticket-btn {
+        width: 150px;
+        height: 38px;
+
+        bottom: 12px;
+        left: 50%;
+    }
+
+}
