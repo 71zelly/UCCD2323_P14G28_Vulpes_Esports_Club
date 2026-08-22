@@ -250,7 +250,7 @@
       color: var(--neon-white);
   }
 
-  .stats-kdr-label {
+  .stats-kda-label {
       font-family: var(--font-display);
       font-weight: 700;
       font-size: 0.78rem;
@@ -260,7 +260,7 @@
       margin-bottom: 8px;
   }
 
-  .stats-kdr-text {
+  .stats-kda-text {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -274,7 +274,7 @@
       margin-bottom: 14px;
   }
 
-  .stats-kdr-text b {
+  .stats-kda-text b {
       color: var(--neon-white);
   }
 
